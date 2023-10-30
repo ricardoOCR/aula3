@@ -1,0 +1,732 @@
+/* ---- Body and canvas ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    background: url(prism.png);
+  }
+
+  canvas {
+    display: block;
+
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    width: 100%;
+    height: 840px;
+    background-color: #000000ab;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+  }
+
+/* ---- Mobile ---- */
+@media (max-width: 334px) {
+  #nav-list {
+    display: none;
+  }
+
+  #Logo {
+    margin-right: auto;
+  }
+
+  #nav-div-hidden {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease;
+    width: 768px;
+    background-color: #050505bb;
+  }
+
+  .nav-div-show {
+    max-height: 200px !important;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    height: 73px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #logoText {
+    font-size: 31px !important;
+  }
+
+  .menu-icon {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #FFF;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  li {
+    padding-top: 10px;
+  }
+
+  #menu-bar {
+    margin-right: 40px;
+    padding: 1px;
+  }
+
+  .caixa-título {
+    justify-content: flex-start !important;
+  }
+
+  .maior {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .linha {
+    height: 1px;
+    border-color: #003df9;
+    width: 80%;
+    transition: all 0.2s ease;
+  }
+
+  .linhaDiv {
+    flex-grow: 1;
+  }
+  
+  .caixa-título {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  
+  #about, #games, #team {
+    font-size: 30px;
+    margin: 0;
+    font-family: Accelerated;
+    color: white;
+    margin-left: 20px;
+    text-decoration: line-through #000000;
+    transition: all 0.2s ease;
+    line-break: strict;
+  }
+}
+
+@media (min-width: 335px) and (max-width: 400px) {
+  #nav-list {
+    display: none;
+  }
+
+  #Logo {
+    margin-right: auto;
+  }
+
+  #nav-div-hidden {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease;
+    width: 768px;
+    background-color: #050505bb;
+  }
+
+  .nav-div-show {
+    max-height: 200px !important;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    height: 73px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu-icon {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #FFF;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+    flex-wrap: nowrap;
+  }
+  #menu-bar {
+    margin-right: 40px;
+    padding: 1px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  li {
+    padding-top: 10px;
+  }
+
+  .caixa-título {
+    justify-content: flex-start !important;
+  }
+
+  .maior {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .linha {
+    height: 1px;
+    border-color: #003df9;
+    width: 80%;
+    transition: all 0.2s ease;
+  }
+
+  .linhaDiv {
+    flex-grow: 1;
+  }
+  
+  .caixa-título {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  
+  #about, #games, #team {
+    font-size: 30px;
+    margin: 0;
+    font-family: Accelerated;
+    color: white;
+    margin-left: 20px;
+    text-decoration: line-through #000000;
+    transition: all 0.2s ease;
+    line-break: strict;
+  }
+}
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+  #nav-list {
+    display: none;
+  }
+
+  #Logo {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+
+  #nav-div-hidden {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease;
+    width: 768px;
+    background-color: #050505bb;
+  }
+
+  .nav-div-show {
+    max-height: 200px !important;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    height: 73px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu-icon {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #FFF;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+  }
+
+  #menu-bar {
+    margin-right: 50px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  li {
+    padding-top: 10px;
+  }
+
+  .caixa-título {
+    justify-content: flex-start !important;
+  }
+
+
+  .maior {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .linha {
+    height: 1px;
+    border-color: #003df9;
+    width: 80%;
+    transition: all 0.2s ease;
+  }
+
+  .linhaDiv {
+    flex-grow: 1;
+  }
+  
+  .caixa-título {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  
+  #about, #games, #team {
+    font-size: 30px;
+    margin: 0;
+    font-family: Accelerated;
+    color: white;
+    margin-left: 20px;
+    text-decoration: line-through #000000;
+    transition: all 0.2s ease;
+    line-break: strict;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 912px) {
+  #nav-list-hidden {
+    display: none;
+  }
+
+  #menu-bar {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+  }
+
+  #Logo {
+    margin-right: auto;
+    margin-left: 50px;
+  }
+
+  .linha {
+    height: 1px;
+    border-color: #003df9;
+    width: 80%;
+    transition: all 0.2s ease;
+  }
+
+  .linhaDiv {
+    flex-grow: 1;
+  }
+  
+  .caixa-título {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  
+  #about, #games, #team {
+    font-size: 30px;
+    margin: 0;
+    font-family: Accelerated;
+    color: white;
+    text-decoration: line-through #000000;
+    margin-left: 50px;
+    transition: all 0.2s ease;
+    line-break: strict;
+  }
+
+  .maior {
+    padding-top: 50px;
+  }
+
+  .botoes {
+    margin-right:50px
+  } 
+}
+
+/* ---- Computer ---- */
+
+@media (min-width: 913px) {
+  #nav-list-hidden {
+    display: none;
+  }
+
+  #menu-bar {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+  }
+
+  #Logo {
+    margin-right: auto;
+    margin-left: 50px;
+  }
+
+  .linha {
+    height: 1px;
+    border-color: #003df9;
+    width: 80%;
+    transition: all 0.2s ease;
+  }
+
+  .linhaDiv {
+    flex-grow: 1;
+  }
+  
+  .caixa-título {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+  }
+  
+  #about, #games, #team {
+    font-size: 30px;
+    margin: 0;
+    font-family: Accelerated;
+    color: white;
+    text-decoration: line-through #000000;
+    margin-left: 50px;
+    transition: all 0.2s ease;
+  }
+
+  .maior {
+    padding-top: 50px;
+  }
+
+  .botoes {
+    margin-right:150px
+  } 
+}
+
+/* ---- Both ---- */
+header {
+  background-color: #050505bb;
+}
+  #LogoLink {
+    text-decoration: line-through black;
+  }
+
+  #logoText {
+    text-transform: capitalize;
+    color: white;
+    font-family: Accelerated;
+    font-size: 35px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  img {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .nav-link {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  li {
+    margin-left: 1rem;
+    margin-right: 0.25rem;
+    list-style-type: none;
+    color: white;
+  }
+
+strong {
+  color: #0040ff;
+}
+
+  #Loading-screen {
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+.progress {
+  width: 0;
+  height: 2px;
+  background: #003df9;
+  position: relative;
+  top: 45%;
+  animation: loading 2.5s forwards cubic-bezier(0,0,0,0);
+}
+
+.loading-logo {
+  position: relative;
+  color: #FFF;
+  top: 43%;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.loader-text {
+    position: relative;
+    color: #FFF;
+    top: 48%;
+}
+
+
+.nav-link:hover {
+  color: rgb(34, 0, 255)
+}
+
+@font-face { font-family: Accelerated; src: url('Vampire\ Wars\ Italic.ttf'); }
+
+
+
+
+
+
+
+.menu-icon {
+    align-self: flex-end;
+    height: 2px;
+    width: 25px;
+    background: #FFF;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+}
+
+.bar-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-bar .menu-icon:nth-child(1) {
+  transform-origin: left center;
+}
+
+#menu-bar .menu-icon:nth-child(2) {
+  transform-origin: left center;
+}
+
+#menu-bar .menu-icon:nth-child(3) {
+  transform-origin: left center;
+}
+
+#menu-bar.open .menu-icon:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+#menu-bar.open .menu-icon:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#menu-bar.open .menu-icon:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+@keyframes animation {
+
+  from {background-color: black;}
+  to {background-color: #003df9};
+
+
+}
+
+@keyframes loading{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.maior {
+  background-color: #000000ab;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#particleDiv {
+  text-align: center;
+  position: absolute;
+  color: white;
+  top: 360px;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  z-index: -1;
+  opacity: 1;
+}
+
+#quoteFont {
+  font-family: accelerated;
+  letter-spacing: 0.10rem;
+  text-shadow: 3px 2px 5px #003df9;
+}
+
+#quote {
+  transform:
+  perspective(75em)
+  rotateX(18deg);
+  text-shadow: 3px 2px 5px #FFF;
+}
+
+#quoteStrong {
+  text-shadow: 3px 2px 5px #003df9;
+}
+
+.paragraphMarginCss {
+  margin-bottom: 3em;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+#AboutLeft {
+  width: 1500px;
+  margin-left: 50px;
+}
+
+#AboutRight {
+  width: 400px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.insideMaior {
+  width: 100%;
+}
+
+.img-fluida {
+  height: auto;
+  max-width: 100%;
+}
+
+#reviewP {
+  margin-left: 50px;
+  margin-top: 0;
+  padding-top: 36px;
+}
+
+#GameReviews {
+  background-color: #0000003b;
+  border-left: 2px solid #003df9;
+  width: 50%;
+  padding: 10px;
+  margin-left: 50px;
+  margin-bottom: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#GameReviews > li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.reviw-game {
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 200px;
+}
+
+.conteudo-review {
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: white;
+  margin-left: 9px;
+  font-size: 16px;
+}
+
+.img-review {
+  color: white;
+}
+
+.reviw-game:hover {
+ opacity: 20%;
+ cursor: pointer;
+}
+
+.a {
+  text-decoration: none;
+  color: white;
+}
+
